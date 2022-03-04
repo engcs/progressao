@@ -1,0 +1,52 @@
+{% load static %}
+
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+     <!-- Bootstrap CSS -->
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'fonts/fontawesome/css/all.min.css' %}" rel="stylesheet">
+
+    {% block 'titulo' %}
+    <title>Template Base</title>
+    {% endblock%}
+
+  </head>
+
+  <body>
+
+    {% block 'menu' %}
+    <div class="bg-light">
+      Código do meu menu
+    </div>
+    {% endblock %}
+
+    {% block 'destaque' %}
+    <div class="bg-secondary">
+      Figuras de destaque
+    </div>
+    {% endblock %}
+
+    {% block 'conteudo' %}
+    <div class="container">
+      <h3>Template do Modelo</h3>
+      <p>conteúdo do site</p>
+    </div>
+    {% endblock %}
+
+    {% block 'rodape' %}
+    <div class="bg-light">
+      Rodapé
+    </div>
+    {% endblock %}
+    <img src="{% static 'img/logo-social.png' %}">
+
+    <script src="{% static 'js/popper.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+
+  </body>
+</html>
