@@ -1,0 +1,6 @@
+@media (min-width: 992px){
+    header .nav-link {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
