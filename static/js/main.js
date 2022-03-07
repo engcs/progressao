@@ -23,7 +23,7 @@ jQuery(document).ready(function ($) {
 
     // Owl
     $('.owl-carousel').owlCarousel({
-        loop: true,
+        loop: false,
         margin: 30,
         autoplay: false,
         autoplayTimeout: 6000,

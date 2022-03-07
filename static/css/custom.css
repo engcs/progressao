@@ -2,6 +2,11 @@ body, html {
     font-family: 'Roboto', sans-serif;
 }
 
+body {
+    background: url(../assets/footer-bg.png) no-repeat center bottom;
+    padding-bottom: 50px;
+}
+
 header {
     width: 100%;
     background-color: transparent;
@@ -190,6 +195,7 @@ header .nav-link:hover {
     display: flex;
     padding: 30px;
     max-height: 250px;
+    min-height: 250px;
 }
 
 #depoimentos .depoimento .quote {
@@ -203,4 +209,70 @@ header .nav-link:hover {
 #depoimentos .depoimento .name span {
     color: #000;
     font-weight: 700;
+}
+
+#contatos .email {
+    border-radius: 5px;
+    background-color: var(--secondary);
+    color: #fff;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 120px 30px;
+}
+
+#contatos .email img {
+    position: absolute;
+    left: 30px;
+    top: -30px;
+}
+
+#contatos .email form {
+    width: 60%;
+    display: flex;
+}
+
+#contatos .email .form-control,
+#contatos .email .form-control::placeholder {
+    background: none;
+    color: var(--medium);
+}
+
+#contatos ul {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#contatos ul li {
+    display: flex;
+    list-style-type: none;
+    margin-left: 25px;
+}
+
+#contatos ul li:first-child {
+    margin-left: 0px;
+}
+
+#contatos ul li a {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    transition: all ease-out 0.2s;
+}
+
+#contatos ul li a:hover {
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.12);
+    background-color: #fff;
+}
+
+#contatos ul li img {
+    max-height: 30px;
 }
