@@ -13,7 +13,7 @@ header {
     transition: background ease-out 0.2s;
 }
 
-header.active {
+header {
     position: sticky;
     top: 0;
     background: #fff;
@@ -28,8 +28,8 @@ header .nav-link {
     padding-right: 0px;
     margin-left: 0px;
     margin-right: 0px;
-    border: solid red;
-    border-width: 1px;
+    /*border: solid red;
+    border-width: 1px;*/
     color: #000000!important;
     border-bottom: solid 4px transparent;
 }
