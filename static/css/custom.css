@@ -28,8 +28,6 @@ header .nav-link {
     padding-right: 0px;
     margin-left: 0px;
     margin-right: 0px;
-    /*border: solid red;
-    border-width: 1px;*/
     color: #000000!important;
     border-bottom: solid 4px transparent;
 }
@@ -37,6 +35,13 @@ header .nav-link {
 header .nav-link:hover {
     border-bottom: solid 4px var(--primary);
     color: var(--secundary)!important;
+}
+
+:target::before {
+    content: '';
+    display: block;
+    height:      130px;
+    margin-top: -130px;
 }
 
 #slider {
